@@ -99,7 +99,7 @@ typedef struct
 
 Weapon weapons[WEAPON_COUNT] =
     {
-        {"Poop Sword", 100, 1000, 0},
+        {"Poop Sword", 100, 1000000, 0},
         {"Harder Poop", 100, 0, 50},
         {"Very Harder Poop", 200, 0, 150}};
 
@@ -555,8 +555,10 @@ void story(Player *player)
     printf("|            \\/            |    |                           |\n");
     printf("|                           b    b                          |\n");
     printf("|============================================================\n");
-    printf("| There lived a fresh Poop adventurer who dreamed of exploring the world.\n");
-    printf("| One day, the adventurer decided to travel deep into a mysterious Rectum.\n");
+    printf("| There lived a fresh Poop adventurer                       |\n");
+    printf("| who dreamed of exploring the world.                       |\n");
+    printf("| One day, the adventurer decided to travel deep            |\n");
+    printf("| into a mysterious Rectum.                                 |\n");
     printf("=============================================================\n");
 
     pauseGame();
@@ -584,9 +586,10 @@ void story(Player *player)
     printf("|   |             b  |   |              |   |      ..       |\n");
     printf("|   |_______________b___b_______________|____|______________|\n");
     printf("|   |                                                       |\n");
-    printf("|============================================================\n");
-    printf("| You walk through the Rectum for several hours.\n");
-    printf("| However, the deeper you go, the less familiar the path becomes.\n");
+    printf("|===========================================================|\n");
+    printf("| You walk through the Rectum for several hours.            |\n");
+    printf("| However, the deeper you go,                               |\n");
+    printf("| the less familiar the path becomes.                       |\n");
     printf("=============================================================\n");
 
     pauseGame();
@@ -602,7 +605,7 @@ void story(Player *player)
     printf("|                          |    |                           |\n");
     printf("|                          |    |                           |\n");
     printf("|                          b    b                           |\n");
-    printf("|============================================================\n");
+    printf("|===========================================================|\n");
     printf("| Suddenly, you realize something...                        |\n");
     printf("| You are completely lost.                                  |\n");
     printf("=============================================================\n");
@@ -621,9 +624,10 @@ void story(Player *player)
     printf("|  >   <   ) ____________/________________________________\\_|\n");
     printf("|    D      )                                               |\n");
     printf("| m      m   )                                              |\n");
-    printf("|============================================================\n");
-    printf("| You look around, trying to find a way out.\n");
-    printf("| Then, you hear a strange growling sound from behind the Transverse folds.\n");
+    printf("|===========================================================|\n");
+    printf("| You look around, trying to find a way out.                |\n");
+    printf("| Then, you hear a strange growling sound from behind       |\n");
+    printf("| the Transverse folds.                                     |\n");
     printf("=============================================================\n");
 
     pauseGame();
@@ -640,9 +644,9 @@ void story(Player *player)
     printf("|   \\       V                           [__________]    /   |\n"); 
     printf("|___________________________________________________________|\n");
     printf("|                                                           |\n");
-    printf("|============================================================\n");
-    printf("| You slowly turn around...                                  |\n");
-    printf("| A huge monster jumps out from the Feces!                   |\n");
+    printf("|===========================================================|\n");
+    printf("| You slowly turn around...                                 |\n");
+    printf("| A huge monster jumps out from the Feces!                  |\n");
     printf("=============================================================\n");
 
     pauseGame();
@@ -659,7 +663,7 @@ void story(Player *player)
     printf("|                       |   > 3<  |                         |\n");
     printf("|______________________|__________|_________________________|\n");
     printf("|                                                           |\n");
-    printf("|============================================================\n");
+    printf("|===========================================================|\n");
     printf("| The monster looks at you and lets out a terrifying roar!  |\n");
     printf("=============================================================\n");
 
@@ -733,7 +737,7 @@ void createMonster(Monster *monster,
     }
     else if (wave == 20)
     {
-        strcpy(monster->name, "King Skeleton");
+        strcpy(monster->name, "King Bone");
 
         monster->maxHp = 500 * wave;
         monster->hp = monster->maxHp;
